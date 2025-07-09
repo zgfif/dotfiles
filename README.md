@@ -6,3 +6,14 @@ Steps to use:
 4. cd ~/dotfiles
 5. stow waybar
 6. Check $ls -la ~/.config/waybar/
+
+
+Packages:
+
+hyprshot - to make screenshots
+yay -S hyprshot
+
+
+
+
+
