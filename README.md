@@ -10,10 +10,11 @@ Steps to use:
 
 Packages:
 
-hyprshot - to make screenshots
+# hyprshot - to make screenshots
 yay -S hyprshot
 
-
+# to change brightness in hypridle
+yay -S brightnessctl
 
 
 
