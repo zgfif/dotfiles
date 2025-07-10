@@ -16,5 +16,8 @@ yay -S hyprshot
 # to change brightness in hypridle
 yay -S brightnessctl
 
+# to generate Material You color palette
+yay -S matugen-bin
 
 
+matugen image <whatever_wallpaper_you_want>

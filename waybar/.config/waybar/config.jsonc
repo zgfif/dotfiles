@@ -43,7 +43,7 @@
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "backlight": {
-        "format": " {percent}% ",
+        "format": " {percent}%",
 	"tooltip": true,
 	"tooltip-format": "Brightless"
     },
@@ -52,10 +52,10 @@
         "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
         "tooltip": true,
         "format-icons": {
-            "default": "",
-            "performance": "",
-            "balanced": "",
-            "power-saver": ""
+            "default": "  ",
+            "performance": "  ",
+            "balanced": "  ",
+            "power-saver": "  "
         }
     },
     "battery": {
@@ -86,7 +86,7 @@
 	"format-ru": "ru"
     },
     "custom/power": {
-        "format" : "⏻ ",
+        "format" : "⏻",
 	"tooltip": false,
 	"menu": "on-click",
 	"menu-file": "$HOME/.config/waybar/power_menu.xml",
