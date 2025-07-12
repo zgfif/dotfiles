@@ -3,7 +3,8 @@
     "height": 32, 
     "spacing": 1, 
     "modules-left": [
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+	"custom/track"
     ],
     "modules-center": [
         "hyprland/window"
@@ -18,6 +19,13 @@
 	"hyprland/language",
         "custom/power"
     ],
+    "custom/track": {
+        "format": "🎵",
+        "tooltip": true,
+        "tooltip-format": "{}",
+        "exec": "~/.config/waybar/now_playing.sh",
+        "interval": 5
+    },
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-muted": " Muted",
