@@ -2,7 +2,7 @@
 @import "colors.css";
 
 * {
-    font-family: "JetBrainsMono Nerd Font", "sans-serif";
+    font-family: "SF Pro Display","JetBrainsMono Nerd Font", "sans-serif";
     font-size: 16px;   
   /*  background-color: @background;*/
     color: @on_error_container;
@@ -63,6 +63,7 @@ button:hover {
 #scratchpad,
 #power-profiles-daemon,
 #mpd {
+    font-family: "SF Mono", "SF Pro Display","JetBrainsMono Nerd Font", "sans-serif";
     padding: 0 10px;
     background-color: transparent;
     color: @on_error_container;
@@ -107,16 +108,16 @@ button:hover {
 }
 
 #power-profiles-daemon.performance {
-    border-bottom: 3px solid @error;
+   /* border-bottom: 3px solid @error;*/
     color: @on_error;
 }
 
 #power-profiles-daemon.balanced {
-    border-bottom: 3px solid #2980b9;
+   /* border-bottom: 3px solid #2980b9;*/
 }
 
 #power-profiles-daemon.power-saver {
-    border-bottom: 3px solid #2ecc71;
+   /* border-bottom: 3px solid #2ecc71; */
 }
 
 #network.disconnected {
