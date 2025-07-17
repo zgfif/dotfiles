@@ -22,3 +22,6 @@ yay -S matugen-bin
 I use hyprpaper, so to change wallpaper I write a **changewallpaper script**[click here](https://gist.github.com/zgfif/008734750ee384ad867aff27fc99533f). Save it to /usr/local/bin .''changewallpaper filename'' is used in matugen.
 
 matugen image <whatever_wallpaper_you_want>
+
+
+

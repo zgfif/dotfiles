@@ -9,8 +9,9 @@
     font-weight: bold;
 }
 
-window#waybar {
 
+
+window#waybar {
     background-color: transparent;
    /* background-color: @background;*/
     color: @on_error_container;

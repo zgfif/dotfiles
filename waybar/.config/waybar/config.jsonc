@@ -1,6 +1,6 @@
 // -*- mode: jsonc -*-
 {
-    "height": 32, 
+    "height": 30, 
     "spacing": 1, 
     "modules-left": [
         "hyprland/workspaces",
@@ -16,8 +16,8 @@
         "power-profiles-daemon",
         "battery",
         "clock",
-	"hyprland/language",
-        "custom/power"
+	"hyprland/language"//,
+        // "custom/power"
     ],
     "custom/track": {
         "format": "🎵",
@@ -27,9 +27,10 @@
         "interval": 5
     },
     "pulseaudio": {
-        "format": "{icon} {volume}%",
+        "format": "{icon} ",
         "format-muted": " Muted",
         "scroll-step": 5,
+	"tooltip-format": "{desc} {volume}%",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
@@ -43,17 +44,18 @@
         "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
     },
     "network": {
-        "format-wifi": " {essid}",
+        "format-wifi": " ",
         "format-ethernet": " {ipaddr}/{cidr}",
         "tooltip-format": " {ifname} via {gwaddr}({signalStrength}%)",
         "format-linked": " {ifname} (No IP)",
         "format-disconnected": "⚠ Disconnected",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",    
+	"tooltip-format-wifi": "   {essid} ({signalStrength}%)"
     },
     "backlight": {
-        "format": " {percent}%",
+        "format": "",
 	"tooltip": true,
-	"tooltip-format": "Brightless"
+	"tooltip-format": "Brightless {percent}%"
     },
     "power-profiles-daemon": {
         "format": "{icon}",
@@ -71,15 +73,16 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon} {capacity}% ",
-        "format-full": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
+        "format": "{icon}",
+        "format-full": "{icon}",
+        "format-charging": "",
+        "format-plugged": "",
         "format-alt": "{icon} {time}",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""],
+	"tooltip-format": "{timeTo}, {capacity}%"
     },
     "clock": {
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "tooltip-format": "<big>{:%A, %d}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}",
 	"calendar": {
 	    "format": {
