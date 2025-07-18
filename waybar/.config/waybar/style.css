@@ -153,8 +153,6 @@ button:hover {
 
 #network:hover,
 #custom-power:hover,
-#language:hover,
-#battery:hover,
 #clock:hover,
 #pulseaudio:hover {
     background-color: @surface_variant;

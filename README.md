@@ -23,5 +23,9 @@ I use hyprpaper, so to change wallpaper I write a **changewallpaper script**[cli
 
 matugen image <whatever_wallpaper_you_want>
 
+# setting up starship
+pacman -S starship
 
+# then add to ~/.barshrc
+eval "$(starship init bash)"
 

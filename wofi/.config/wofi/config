@@ -1,0 +1,12 @@
+prompt=⌘ Command:
+width=30%
+allow_images=true
+hide_scroll=true
+matching=fuzzy
+insensitive=true
+no_actions=true
+lines=4
+dynamic_lines=true
+columns=2
+/* search=zen */
+/* content_halign=center */
