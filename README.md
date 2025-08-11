@@ -100,3 +100,71 @@ ls -l /run/user/1000/.ydotool_socketш
 3. Протестировать движение мыши:
 ydotool mousemove 1 1
 
+
+
+### Activate Num Lock by-default
+sudo pacman -S numlockx
+
+
+
+### ADD multitouch
+
+
+yay -S ruby-fusuma
+
+if hasn't been found:
+yay -Syu
+
+sudo pacman -S xdotool wmctrl libinput
+yay -S ruby-fusuma-plugin-sendkey ruby-fusuma-plugin-wmctrl
+sudo gpasswd -a $USER input
+
+libinput list-devices
+
+Там должно быть что-то вроде:
+
+Device:           SYNA2B31:00 06CB:CEB3 Touchpad
+
+mkdir -p ~/.config/fusuma
+nano ~/.config/fusuma/config.yml
+
+swipe:
+  3:
+    left:
+      command: "hyprctl dispatch workspace e+1"
+    right:
+      command: "hyprctl dispatch workspace e-1"
+    up:
+      command: "hyprctl dispatch killactive"
+    down:
+      command: "hyprctl dispatch exit"
+  4:
+    left:
+      command: "playerctl previous"
+    right:
+      command: "playerctl next"
+    up:
+      command: "playerctl play-pause"
+    down:
+      command: "playerctl stop"
+
+pinch:
+  in:
+    command: "xdotool key ctrl+minus"
+  out:
+    command: "xdotool key ctrl+plus"
+
+threshold:
+  swipe: 0.4
+  pinch: 0.1
+interval:
+  swipe: 0.8
+  pinch: 0.1
+
+fusuma
+
+В ~/.config/hypr/hyprland.conf:
+
+exec-once = fusuma -d
+
+
