@@ -7,7 +7,7 @@ swipe:
     up:
       command: "hyprctl dispatch killactive"
     down:
-      command: "hyprctl dispatch exit"
+      command: "hyprlock"
   4:
     left:
       command: "playerctl previous"

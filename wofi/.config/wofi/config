@@ -1,4 +1,4 @@
-prompt=⌘ Command:
+prompt=⌘ appname
 width=400
 height=120
 allow_images=true
