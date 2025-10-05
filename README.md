@@ -168,3 +168,10 @@ fusuma
 exec-once = fusuma -d
 
 
+## open image(s)
+sudo pacman -S imv
+imv <imagepath>
+
+
+
+yay -S swayosd
