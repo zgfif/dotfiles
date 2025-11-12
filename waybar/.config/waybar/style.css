@@ -2,9 +2,8 @@
 @import "colors.css";
 
 * {
-    font-family: "SF Pro Display","JetBrainsMono Nerd Font", "sans-serif";
+    font-family: "JetBrainsMono Nerd Font", "SF Pro Display","sans-serif";
     font-size: 16px;   
-  /*  background-color: @background;*/
     color: @on_error_container;
     font-weight: bold;
 }
@@ -64,7 +63,7 @@ button:hover {
 #scratchpad,
 #power-profiles-daemon,
 #mpd {
-    font-family: "SF Mono", "SF Pro Display","JetBrainsMono Nerd Font", "sans-serif";
+    /* font-family: "JetBrainsMono Nerd Font", "SF Mono", "SF Pro Display", "sans-serif"; */
     padding: 0 10px;
     background-color: transparent;
     color: @on_error_container;
@@ -83,7 +82,7 @@ button:hover {
 
 
 #battery.charging, #battery.plugged {
-    color: @on_primary;
+    /* color: @on_primary; */
     /* background-color: @primary; */
 }
 
@@ -126,15 +125,17 @@ button:hover {
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
+    background-color: transparent;
+    /* background-color: none; */
+    color: #90b1b1;
 }
 
 #wireplumber {
-    background-color: #fff0f5;
+    /* background-color: #fff0f5; */
 }
 
 #wireplumber.muted {
-    background-color: #f53c3c;
+    /* background-color: #f53c3c; */
 }
 
 #language {
@@ -159,7 +160,6 @@ button:hover {
 }
 
 #network.disconnected,
-#pulseaudio.muted,
 #mpd.disconnected {
     background-color: @error;
     color: @on_error;
